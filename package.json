@@ -1,0 +1,37 @@
+{
+  "name": "clone-playground",
+  "version": "0.1.0",
+  "description": "A boilerplate for playing around with Clone.",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshdrink/clone-playground.git"
+  },
+  "author": "Clone Contributors (https://github.com/joshdrink/clone/graphs/contributors)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshdrink/clone-playground/issues"
+  },
+  "homepage": "https://designwithclone.ca/",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "browserslist": "^4.6.3",
+    "clone-framework": "^2.3.7",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "browserslist": [
+    "last 1 version and not dead"
+  ]
+}

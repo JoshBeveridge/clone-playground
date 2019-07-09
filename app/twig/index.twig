@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {# Site Title #}
+        <title>Clone: Playground</title>
+        
+        {# Charset #}
+        <meta charset="utf-8" />
+
+        {# Compatibility #}
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge">
+
+        {# Viewport #}
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+        {# Generic Google Fonts #}
+        <link
+            href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,400i,600,600i,800,800i&amp;subset=latin-ext"
+            rel="stylesheet">
+
+        {# Material Icons #}
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        {# jQuery #}
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+        {# jQuery UI #}
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+
+        {# Your CSS #}
+        <link 
+            async 
+            href="css/app.css"
+            rel="stylesheet">
+
+        {# Favicons #}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
+        <meta name="msapplication-TileColor" content="#b91d47">
+        <meta name="theme-color" content="#b91d47">
+
+    </head>
+
+    {# Playground's Body #}
+    <body data-clone>
+
+        <div class="pg-hero">
+            <div data-c-radius="rounded">
+                <div data-c-background="black(80)" data-c-color="white" data-c-padding="all(double)">
+                    <h1 data-c-font-size="h1" data-c-margin="bottom(normal)" data-c-font-weight="bold">Welcome to Clone Playground!</h1>
+                    <p data-c-margin="bottom(half)">Playground gives you access to everything you need to have some fun prototyping things with Clone. You can stick to regular HTML, or you can dive into the deep end and build some fun stuff with JavaScript, Sass, and Twig.</p>
+                    <p>Take a peek inside <span data-c-font="mono">app/twig/index.twig</span> to get started!</p>
+                </div>
+                <div class="pg-alert" data-c-color="white" data-c-padding="tb(normal) rl(double)">
+                    <p>Need a refresher on how to use Clone? <a href="https://designwithclones.ca/" title="Open the Clone documentation in a new window or tab." target="_blank">Check out the docs</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        {# Clone's JavaScript #}
+        <script src="js/clone/clone.js"></script>
+
+        {# Your JavaScript #}
+        <script src="js/app.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,29 @@
+// Clone Playground: Styles
+
+// Place any custom Clone theme variables here.
+
+// Import Clone
+@import "../../node_modules/clone-framework/app/scss/clone";
+
+// Custom CSS
+.pg-hero {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    >div {
+        width: 90%;
+        @media #{$clone-tablet-landscape} {
+            width: 50%;
+        }
+        .pg-alert {
+            background: #f14948;
+            background: -moz-linear-gradient(45deg, #f14948 0%, #f7af5b 100%);
+            background: -webkit-linear-gradient(45deg, #f14948 0%,#f7af5b 100%);
+            background: linear-gradient(45deg, #f14948 0%,#f7af5b 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f14948', endColorstr='#f7af5b',GradientType=1 );
+        }
+    }
+}
