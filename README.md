@@ -2,8 +2,8 @@
 
 ## Installation & Usage
 
-- Install [Node.js](https://nodejs.org/en/).
-- Install [Gulp](https://gulpjs.com/).
+- Install [Node.js](https://nodejs.org/en/) (if you don't already have it on your computer).
+- Install [Gulp](https://gulpjs.com/) (if you don't already have it on your computer).
 - [Download](https://github.com/joshdrink/clone-playground/archive/master.zip) and unzip Clone.
 - Open terminal/command prompt.
 - In terminal/command prompt, navigate to where you downloaded Clone Playground (e.g. `cd /Downloads/clone-playground`).
