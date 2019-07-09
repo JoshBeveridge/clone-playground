@@ -14,12 +14,9 @@
         - Install [Node.js](https://nodejs.org/en/): 
             - Run `brew install node`.
 - If you don't already have [Gulp](https://gulpjs.com/) installed, open a new terminal/command prompt.
-    - On Windows:
+    - On Windows & Mac:
         - Run `npm install gulp-cli -g`.
         - Run `npm install gulp -D`.
-    - On Mac:
-        - Run `sudo npm install gulp-cli -g`.
-        - Run `sudo npm install gulp -D`.
 - [Download](https://github.com/joshdrink/clone-playground/archive/master.zip) and unzip Clone.
 - Open a new terminal/command prompt.
 - In terminal/command prompt, navigate to where you downloaded Clone Playground (e.g. `cd Downloads/clone-playground-master`).
