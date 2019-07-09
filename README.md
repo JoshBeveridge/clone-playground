@@ -2,11 +2,24 @@
 
 ## Installation & Usage
 
-- Install [Node.js](https://nodejs.org/en/) (if you don't already have it on your computer).
-- Install [Gulp](https://gulpjs.com/) (if you don't already have it on your computer).
+- If you don't already have [Node.js](https://nodejs.org/en/) installed, open a new terminal/command prompt.
+    - On Windows:
+        - Download and install [Node.js](https://nodejs.org/en/).
+    - On Mac:
+        - Install xCode from the Apple App Store.
+        - Open a new terminal/command prompt.
+        - Install [Homebrew](https://brew.sh/) by running `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.
+        - Install [Node.js](https://nodejs.org/en/) by running `brew install node`.
+- If you don't already have [Gulp](https://gulpjs.com/) installed, open a new terminal/command prompt.
+    - On Windows:
+        - Run `npm install gulp-cli -g`.
+        - Run `npm install gulp -D`.
+    - On Mac:
+        - Run `sudo npm install gulp-cli -g`.
+        - Run `sudo npm install gulp -D`.
 - [Download](https://github.com/joshdrink/clone-playground/archive/master.zip) and unzip Clone.
-- Open terminal/command prompt.
-- In terminal/command prompt, navigate to where you downloaded Clone Playground (e.g. `cd /Downloads/clone-playground`).
+- Open a new terminal/command prompt.
+- In terminal/command prompt, navigate to where you downloaded Clone Playground (e.g. `cd Downloads/clone-playground-master`).
 - In terminal/command prompt, run `npm install`.
 - In terminal/command prompt, run `gulp`.
 - Have fun.
