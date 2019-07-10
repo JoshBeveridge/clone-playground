@@ -50,12 +50,6 @@ const twig = require('gulp-twig');
         .pipe(dest('cache'));
     }
 
-    function templateThemes() {
-        return src('app/twig/themes/**/*.twig')
-        .pipe(twig())
-        .pipe(dest('cache/themes'));
-    }
-
     // Clone JS
     function moveCloneJS() {
         return src('node_modules/clone-framework/app/js/clone.js')
@@ -123,7 +117,7 @@ const twig = require('gulp-twig');
     }
 
     // Compile
-    const compile = series(cleanCache, template, templateThemes, moveCloneJS, js, cacheImages, compileCSS);
+    const compile = series(cleanCache, template, moveCloneJS, js, cacheImages, compileCSS);
 
     // Dist
     const dist = series(distCacheHTML, distCacheJS, distCacheCSS, distCloneJS, moveImages, distFavicons);
