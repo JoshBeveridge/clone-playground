@@ -1,13 +1,13 @@
-// =============================================================================
-    // Clone Playground: Styles
-// =============================================================================
+// My Custom Clone Theme
+// Please note that Clone must be included last, after all of your custom variables.
 
-// Place any custom Clone theme variables here.
+// Clone Theme Variables
+// All available theme variables can be found at https://github.com/joshdrink/clone-framework/blob/master/app/scss/core/_defaults.scss
 
-// Import Clone
+// Include Clone
 @import "../../node_modules/clone-framework/app/scss/clone";
 
-// Custom CSS
+// Your CSS Goes Below Here
 .pg-hero {
     align-items: center;
     display: flex;

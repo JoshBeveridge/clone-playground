@@ -79,31 +79,31 @@ const twig = require('gulp-twig');
 
     function moveImages() {
         return src('cache/img/**/*')
-        .pipe(dest('dist/img'));
+        .pipe(dest('docs/img'));
     }
 
     // Minification
-    function distCacheHTML() {
+    function docsCacheHTML() {
         return src('cache/**/*.html')
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
     }
-    function distCacheJS() {
+    function docsCacheJS() {
         return src('cache/js/*.js')
         .pipe(uglify())
-        .pipe(dest('dist/js'));
+        .pipe(dest('docs/js'));
     }
-    function distCacheCSS() {
+    function docsCacheCSS() {
         return src('cache/css/*.css')
         .pipe(postcss([cssnano()]))
-        .pipe(dest('dist/css'));
+        .pipe(dest('docs/css'));
     }
-    function distCloneJS() {
+    function docsCloneJS() {
         return src('cache/js/clone/*.js')
-        .pipe(dest('dist/js/clone'));
+        .pipe(dest('docs/js/clone'));
     }
-    function distFavicons() {
+    function docsFavicons() {
         return src('app/favicons/*')
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
     }
 
     // Cache Removal
@@ -112,15 +112,15 @@ const twig = require('gulp-twig');
     }
 
     // Docs Removal
-    function cleanDist() {
-        return del(['dist/**/*', '!dist/CNAME']);
+    function cleanDocs() {
+        return del(['docs/**/*', '!docs/CNAME']);
     }
 
     // Compile
     const compile = series(cleanCache, template, moveCloneJS, js, cacheImages, compileCSS);
 
-    // Dist
-    const dist = series(distCacheHTML, distCacheJS, distCacheCSS, distCloneJS, moveImages, distFavicons);
+    // docs
+    const docs = series(docsCacheHTML, docsCacheJS, docsCacheCSS, docsCloneJS, moveImages, docsFavicons);
 
     // Watch
     function watchFiles() {
@@ -130,6 +130,6 @@ const twig = require('gulp-twig');
     }
 
     // Export
-    exports.build = series(cleanDist, compile, dist);
+    exports.build = series(cleanDocs, compile, docs);
     exports.watch = series(compile, parallel(browserSync, watchFiles));
     exports.default = series(compile, parallel(browserSync, watchFiles));
