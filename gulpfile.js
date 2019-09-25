@@ -52,7 +52,7 @@ const twig = require('gulp-twig');
 
     // Clone JS
     function moveCloneJS() {
-        return src('node_modules/clone-framework/app/js/clone.js')
+        return src('node_modules/clone-framework/dist/js/clone.min.js')
         .pipe(dest('cache/js/clone'));
     }
 
