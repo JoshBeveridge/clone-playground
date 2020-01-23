@@ -18,10 +18,10 @@
   },
   "homepage": "https://designwithclone.ca/",
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
-    "browserslist": "^4.6.3",
-    "clone-framework": "latest",
+    "browserslist": "^4.8.5",
+    "clone-framework": "^2.4.13",
     "cssnano": "^4.1.10",
     "del": "^3.0.0",
     "gulp": "^4.0.2",
